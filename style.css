@@ -1,0 +1,145 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; /* Modern font similar to Runna */
+    background-color: #f4f6f8; /* Light grey background for a clean look */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Navigation Container */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+#weekDropdown {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#weekDropdown:hover {
+    border-color: #04478f; /* Blue border on hover */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #04478f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Week Content Styling */
+#weekContent {
+    margin-top: 20px;
+}
+
+#weekContent h2 {
+    font-size: 26px;
+    color: #04478f;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#weekContent p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Card Style for Each Activity */
+#weekContent ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#weekContent li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#weekContent li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+#weekContent li strong {
+    font-size: 20px;
+    color: #04478f;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#weekContent li p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Highlight Important Metrics */
+#weekContent li p span.metric {
+    font-weight: bold;
+    color: #FF5733; /* Use a vibrant color for key metrics */
+}
+
+/* Total Mileage Styling */
+#weekContent h3 {
+    font-size: 22px;
+    color: #060f41; /* Matching the highlight color */
+    margin-top: 25px;
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Additional Styling for a Cleaner Look */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center content on the page */
+}
+
+#weekContent {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for content area */
+}
+/* Styling for subtle labels */
+.label {
+    font-weight: 600; /* Slightly bold, but not overly heavy */
+    color: #555; /* Dark grey for a subtle look */
+    font-size: 14px; /* Smaller font size */
+}
