@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; /* Modern font similar to Runna */
+    /* font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; Modern font similar to Runna */
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #f4f6f8; /* Light grey background for a clean look */
     color: #333;
     padding: 20px;
